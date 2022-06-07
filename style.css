@@ -6,4 +6,25 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  height: 17px;
+  width: 150px;
+}
+
+.trybewarts-login button {
+  height: 20px;
+  width: 75px;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+  padding: 10px;
 }
