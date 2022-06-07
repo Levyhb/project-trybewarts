@@ -1,6 +1,8 @@
-let email = document.getElementById('email')
-let password = document.getElementById('password')
-let buttonEntrar = document.querySelector('.btnEnter');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const buttonEntrar = document.querySelector('.btnEnter');
+const agreement = document.getElementById('agreement');
+let submitBtn = document.getElementById('submit-btn')
 
 buttonEntrar.addEventListener('click', () =>{
 if(email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -8,10 +10,11 @@ if(email.value === 'tryber@teste.com' && password.value === '123456') {
 } else {
 alert('Email ou senha inválidos.');
 }
-})
+});
 
-// function verifyEmail(){
-//   if(email.value === tryber@teste.com ){
-//     alert
-//   }
-// }
+function agreementChecked() {
+  agreement.addEventListener('click', () => {
+    submitBtn.style.display = 'block';
+    submitBtn.removeAttribute('disabled');
+  });
+} agreementChecked();
