@@ -55,7 +55,6 @@ main {
 }
 
 aside {
-  width: 30%;
   display: flex;
   justify-content: center;
 }
@@ -80,12 +79,24 @@ aside {
   flex-direction: column;
 }
 
-#submit-btn {
-  display: none;
+.textBox {
+  position: relative;
 }
 
 footer {
   background-color: rgb(60, 64, 75);
   color: white;
   text-align: center;
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 96%;
+  width: 100%;
 }
+
+#counter {
+  position: absolute;
+  left: 88%;
+  top: 85%;
+}
+

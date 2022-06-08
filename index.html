@@ -4,25 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <link rel="stylesheet" href="style.css" />
+
     <title>Trybewarts</title>
   </head>
   <body>
     <header class="header">
-      <img
-        class="trybewarts-header-logo"
-        src="images/trybewarts-header-logo.svg"
-        alt="Logo Trybewarts"
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts"
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form action="" method="get" class="trybewarts-login">
-        <input type="email" name="email" id="email" placeholder="Email" />
-        <input
-          type="password"
-          name="password"
-          id="password"
-          placeholder="Senha"
-        />
+        <div class="field">
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <input type="password" name="password" id="password" placeholder="Senha"/>
+        </div>
         <button class="btnEnter">Entrar</button>
       </form>
     </header>
@@ -60,20 +56,20 @@
           </div>
           <div class="tools">
             <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label for="subject">
-              <input type="checkbox" name="HoFs" class="subject" value="HoFs">HoFs
+            <label for="hofs">
+              <input type="checkbox" name="HoFs" class="subject" value="HoFs" id="hofs">HoFs
             </label>
-            <label for="subject">
-              <input type="checkbox" name="Jest" class="subject" value="Jest">Jest
+            <label for="jest">
+              <input type="checkbox" name="Jest" class="subject" value="Jest" id="jest">Jest
             </label>
-            <label for="subject">
-              <input type="checkbox" name="Promises" class="subject" value="Promises">Promises
+            <label for="promises">
+              <input type="checkbox" name="Promises" class="subject" value="Promises" id="promises">Promises
             </label>
-            <label for="subject">
-              <input type="checkbox" name="React" class="subject" value="React">React
+            <label for="react">
+              <input type="checkbox" name="React" class="subject" value="React" id="react">React
             </label>
-            <label for="subject">
-              <input type="checkbox" name="SQL" class="subject" value="SQL">SQL
+            <label for="SQL">
+              <input type="checkbox" name="SQL" class="subject" value="SQL" id="SQL">SQL
             </label>
             <label for="Python">
               <input type="checkbox" name="Python" class="subject" value="Python" id="Python">Python
@@ -106,8 +102,12 @@
           <label for="10">10</label>
         </div>
         
-          <label for="textarea" class="textarea">Deixe seu comentário:</label>
-          <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
+          
+            <label for="textArea" class="textarea">Deixe seu comentário:</label>
+          <div class="textBox">
+            <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+            <span id="counter">500</span>
+          </div>
           <div>
             
             <label for="agreement" id="label-infos"> <input type="checkbox" name="boxcheck" id="agreement" > Você concorda com o uso das informações acima?"</label>
@@ -117,10 +117,10 @@
 
       </form>
       </section>
-      <aside>
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts">
+      <aside > 
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts" >
       </aside>
-
+      
 
     </main>
 

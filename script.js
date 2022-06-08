@@ -14,7 +14,20 @@ buttonEntrar.addEventListener('click', () => {
 
 function agreementChecked() {
   agreement.addEventListener('click', () => {
-    submitBtn.style.display = 'block';
-    submitBtn.removeAttribute('disabled');
+    if (agreement.checked) {
+      submitBtn.removeAttribute('disabled');
+    } else {
+      submitBtn.setAttribute('disabled');
+    }
   });
 } agreementChecked();
+
+const textBox = document.getElementById('textarea');
+
+function checkText() {
+  const count = document.querySelector('#counter');
+  count.innerText = '500';
+  const textLength = count.innerText - textBox.value.length;
+  count.innerText = textLength;
+}
+textBox.addEventListener('keyup', checkText);
