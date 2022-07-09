@@ -33,14 +33,14 @@
       <form action="" method="get" id="evaluation-form">
         <div class="block1">
           <div class="names">
-            <input type="text" name="nome" id="input-name" placeholder="Nome">
-            <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+            <input type="text" name="nome" id="input-name" placeholder="Nome" class="form-control">
+            <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome" class="form-control">
           </div>
           
           <input type="email" name="email" id="input-email" placeholder="Email" class="form-control">
-          <label for="casas" id="casas">casas
-            <div class="houses ui form">
-              <select name="house" id="house">
+          <label for="casas" id="casas" class="label-title">Casas
+            <div class="houses">
+              <select name="house" id="house" class="form-select">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -52,7 +52,7 @@
         </div>
         <div class="second-block">
           <div class='family'>
-            <label for="" id="label-family">Qual sua família?</label>
+            <label for="" id="label-family" class="label-title">Qual sua família?</label>
 
             <label for="front"><input type="radio" name="family" id="front" value="Frontend" class="form-check-input"> Frontend</label>
 
@@ -62,7 +62,7 @@
           
           </div>
           <div class="tools form-check">
-            <label for="label-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <label for="label-content" id="label-content" class="label-title">Qual conteúdo você está com mais vontade de aprender?</label>
             <div class="sub-tools">
               <label for="hofs">
                 <input type="checkbox" name="HoFs" class="subject form-check-input" value="HoFs" id="hofs"> HoFs
@@ -116,7 +116,7 @@
         </div>
         <br>
           
-          <label for="textArea" class="textarea">Deixe seu comentário:</label>
+          <label for="textArea" class="textarea label-title">Deixe seu comentário:</label>
           <div class="textBox ">
             <textarea name="textarea" id="textarea" cols="50" rows="5" maxlength="500" class="textarea form-control"></textarea>
             <span id="counter">500</span>
@@ -134,13 +134,15 @@
       </form>
       </section>
       <section class="resultForm" id="form-data">
-        <p id="nameResult">Nome: </p>
-        <p id="emailResult">Email: </p>
-        <p id="casaResult">Casa: </p>
-        <p id="familiaResult">Família: </p>
-        <p id="materiasResult">Matérias: </p>
-        <p id="rateResult">Avaliação:</p>
-        <p id="observationResult">Observações:</p>
+        <div class="form-div">
+          <p id="nameResult">Nome: </p>
+          <p id="emailResult">Email: </p>
+          <p id="casaResult">Casa: </p>
+          <p id="familiaResult">Família: </p>
+          <p id="materiasResult">Matérias: </p>
+          <p id="rateResult">Avaliação:</p>
+          <p id="observationResult">Observações:</p>
+        </div>
       </section>
       <aside > 
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts">

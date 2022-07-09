@@ -91,10 +91,9 @@ submitButton.addEventListener('click', (e) => {
   resultForm.style.display = 'block';
   resultName();
   resultEmail();
-  resultFamily();
+  resultHouse();
   resultMaterias();
   resultRate();
   resultObservation();
-  resultHouse();
-  // ;
+  resultFamily();
 });
