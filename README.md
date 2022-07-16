@@ -22,4 +22,5 @@
 - [@Levyhb](https://github.com/Levyhb)
 
 ## Screenshots:
-
+#### Veja o resultado aqui: https://levyhb.github.io/project-trybewarts/
+![image](https://user-images.githubusercontent.com/94788307/179367429-daa8b3c8-4813-41f8-9713-af90af51e661.png)
