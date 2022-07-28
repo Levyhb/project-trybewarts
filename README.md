@@ -16,6 +16,7 @@
 - Bootstrap
 - Git
 
+#### Responsividade: ✅
 
 ## Autores
 
